@@ -1,6 +1,7 @@
 import random
 from time import sleep
 
+#converte o arquivo txt em lista
 def converte_em_lista(arquivo, lista):
     with open(arquivo, 'r', encoding='UTF8') as texto:
         for linha in texto:
@@ -10,7 +11,7 @@ def converte_em_lista(arquivo, lista):
 frases = []
 frases = converte_em_lista('ditados.txt', frases)
 
-# Inicio do programa
+#Início do programa
 jogador = input('Informe seu nome: ')
 sleep(1)
 print(f'É uma honra te conhecer {jogador}')
